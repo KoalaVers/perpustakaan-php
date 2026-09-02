@@ -28,7 +28,6 @@ class Member
             return $this->name .
                    " berhasil meminjam buku \"" .
                    $book->getTitle() . "\".";
-
         }
 
         return $this->name .
@@ -38,12 +37,15 @@ class Member
     public function getBorrowedBook()
     {
         if ($this->borrowedBook != null) {
-
             return $this->borrowedBook->getTitle();
-
         }
 
         return "Tidak ada buku yang sedang dipinjam.";
+    }
+
+    public function getMemberId()
+    {
+        return $this->memberId;
     }
 }
 

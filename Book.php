@@ -21,6 +21,11 @@ class Book
         return "Judul: " . $this->title .
                " | Penulis: " . $this->author;
     }
+
+    public function getAuthor()
+    {
+        return $this->author;
+    }
 }
 
 ?>
